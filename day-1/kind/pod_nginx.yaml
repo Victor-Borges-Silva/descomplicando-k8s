@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: descomplicando-k8s-nginx2
+  name: descomplicando-k8s-nginx2
+spec:
+  containers:
+  - image: nginx
+    name: descomplicando-k8s-nginx2
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
