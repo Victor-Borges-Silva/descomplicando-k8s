@@ -3,17 +3,21 @@ kind: Pod
 metadata:
   labels:
     run: girus
-  name: multicontainer
+  name: resourcelimits
 spec:
   containers:
   - image: nginx
     name: nginx
-  - image: busybox
-    name: busybox
     args:
       - sleep
-      - "600"
-    resources: {}
+      - "1800"
+    resources: 
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+      requests:
+        memory: "64Mi"
+        cpu: "250m"
   dnsPolicy: ClusterFirst
   restartPolicy: Always
 status: {}
