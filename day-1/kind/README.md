@@ -1,7 +1,10 @@
+# Criar o cluster
+kind create cluster --name descomplicando-k8s --config kind-cluster.yaml
+
 Descomplicando o Kubernetes - Expert Mode
  
 
-DAY-1
+# DAY-1
  
 
 O quê preciso saber antes de começar?
@@ -32,7 +35,7 @@ https://www.cncf.io/certification/cks/
 
  
 
-O Container Engine
+# O Container Engine
 Antes de começar a falar um pouco mais sobre o Kubernetes, nós primeiro precisamos entender alguns componentes que são importantes no ecossistema do Kubernetes, um desses componentes é o Container Engine.
 
 O Container Engine é o responsável por gerenciar as imagens e volumes, é ele o responsável por garantir que os os recursos que os containers estão utilizando está devidamente isolados, a vida do container, storage, rede, etc.
@@ -41,7 +44,7 @@ Hoje temos diversas opções para se utilizar como Container Engine, que até po
 
 Opções como o Docker, o CRI-O e o Podman são bem conhecidas e preparadas para o ambiente produtivo. O Docker, como todos sabem, é o Container Engine mais popular e ele utiliza como Container Runtime o containerd.
 
-Container Runtime? O que é isso?
+# Container Runtime? O que é isso?
 
 Calma que vou te explicar já já, mas antes temos que falar sobre a OCI. :)
 

@@ -1,3 +1,6 @@
+# Expor o projeto final 
+kubectl port-forward projetofinal 8080:80
+
 Descomplicando o Kubernetes - Expert Mode
  
 
